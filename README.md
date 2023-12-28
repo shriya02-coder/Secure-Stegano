@@ -1,5 +1,5 @@
 
-# Secure Stegano - 
+# Secure Stegano 
 ### Embedding privacy in every frame!
 ![image](SecureStegano.png)
 
