@@ -8,9 +8,6 @@
 2. [Objective](#objective)
 3. [Features](#features)
 4. [Installation](#installation)
-   - [General Requirements](#general-requirements)
-   - [Linux & WSL](#for-linux--wsl)
-   - [Mac](#for-mac)
 5. [Usage](#usage)
    - [Encoding](#encoding)
    - [Decoding](#decoding)
@@ -38,39 +35,48 @@ The primary objective of Secure Stegano is to provide a robust and secure method
 
 <details>
 <summary><b>For Linux</b></summary>
+   
 - Install FFmpeg: `sudo apt install ffmpeg -y`
 - Clone the project: `git clone https://github.com/shriya-02coder/Secure-Stegano`
 - Navigate to the directory and install requirements: `pip install -r requirements.txt`
 - Create RSA keys: `python3 rsagen.py`
-</details>>
+</details>
 
 <details>
 <summary><b>For MacOS</b></summary>
+   
 - Install FFmpeg: `brew install ffmpeg`
 - Clone the project: `git clone https://github.com/shriya-02coder/Secure-Stegano`
 - Navigate to the directory and install requirements: `pip install -r requirements.txt`
 - Create RSA keys: `python3 rsagen.py`
-</details>>
+</details>
+
 
 
 ## Usage
 ### Encoding
-1. Run: 
- ```sh 
- python3 encode.py <video-to-encode-with-extension>
+1. Run the following command in your terminal:
+   ```sh
+   python3 encode.py <video-to-encode-with-extension>
+   ```
 
-2. Choose your preferred encryption type from AES and RSA
-3. If you choose AES then specify the key type from HEX(eg:1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF) and ASCII (eg: 3)
-and then specify the path to the public key. For RSA, no such specification will be required.
-4. Enter 15 different frame numbers (for eg: 11 12 31 45 5 68 72 83 9 110 131 122 23 14 19) wherein you want to encode the data.
+2. Choose your preferred encryption type from AES and RSA.
+
+3. If you choose AES, then specify the key type from HEX (e.g., `1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF`) or ASCII (e.g., `mysecretkey`), and then specify the path to the public key. For RSA, no such specification will be required.
+
+4. Enter 15 different frame numbers (for example: `11 12 31 45 5 68 72 83 9 110 131 122 23 14 19`) wherein you want to encode the data.
+
 
 ### Decoding
 1. Run: 
  ```sh 
  python3 decode.py <video-to-decode-with-extension>
- 
-2. If AES encryption is used, name the image where the encrypted frame numbers are stored (default: encrypt.png). 
+ ```
+
+2. If AES encryption is used, name the image where the encrypted frame numbers are stored (default: encrypt.png).
+
 3. Provide the AES key, which will be stored in the AES-encryption-key file.
+
 4. If RSA is used, the 'keys' folder will be directly accessed to retrieve the keys.
 
 ## Cracking Keys
