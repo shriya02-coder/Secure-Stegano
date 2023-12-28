@@ -1,0 +1,1 @@
+<!-- AES key shall be meticulously preserved within the designated repository. It is crucial to facilitate the secure transmission of the key text to the authorized recipient to ensure proper decryption. Absolute caution is advised to prevent the deletion of this critical folder. -->
