@@ -57,7 +57,7 @@ The primary objective of Secure Stegano is to provide a robust and secure method
 ### Encoding
 1. Run the following command in your terminal:
    ```sh
-   python3 encode.py <video-to-encode-with-extension>
+   python3 encode.py <video for encoding with its extension>
    ```
 
 2. Choose your preferred encryption type from AES and RSA.
@@ -70,7 +70,7 @@ The primary objective of Secure Stegano is to provide a robust and secure method
 ### Decoding
 1. Run: 
  ```sh 
- python3 decode.py <video-to-decode-with-extension>
+ python3 decode.py <video for decoding with its extension>
  ```
 
 2. If AES encryption is used, name the image where the encrypted frame numbers are stored (default: encrypt.png).
