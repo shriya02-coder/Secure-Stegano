@@ -62,7 +62,7 @@ The primary objective of Secure Stegano is to provide a robust and secure method
 
 2. Choose your preferred encryption type from AES and RSA.
 
-3. If you choose AES, then specify the key type from HEX (e.g., `1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF`) or ASCII (e.g., `mysecretkey`), and then specify the path to the public key. For RSA, no such specification will be required.
+3. If you choose AES, then specify the key type from HEX (e.g., `1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF`) or ASCII (e.g., `3`), and then specify the path to the public key. For RSA, no such specification will be required.
 
 4. Enter 15 different frame numbers (for example: `11 12 31 45 5 68 72 83 9 110 131 122 23 14 19`) wherein you want to encode the data.
 
